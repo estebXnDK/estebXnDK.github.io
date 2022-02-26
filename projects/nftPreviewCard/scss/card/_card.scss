@@ -1,0 +1,45 @@
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: $backgroun-card-color;
+    width: 300px;
+    border-radius: $radius-corner;
+    >figure>img{
+        border-radius: calc($radius-corner / 2);
+    }
+    .credits {
+        display: flex;
+        align-items: center;
+        >strong{
+            margin-left: 5px;
+        }
+    }
+    .infoNft{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        >div{
+            display: flex;
+            align-items: center;
+
+            img{
+                margin-right: 5px;
+            }
+        }
+    }
+    .avatar {
+        height: 30px;
+        border-radius: 100%;
+        border: 2px solid $white;
+        margin-right: 10px;
+    }
+}
+.img-fluid {
+    width: 100%;
+}
