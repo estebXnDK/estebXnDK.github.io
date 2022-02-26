@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: black;
+    color: white;
+}
+h1 {
+    text-align: center;
+    margin: 10px;
+}
+.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 10px 10px;
+    background-color: white;
+    color: black;
+}
+.card>.infoCard, .card>a {
+    text-align: center;
+}
+.card figure img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    max-width: 400px;
+}
