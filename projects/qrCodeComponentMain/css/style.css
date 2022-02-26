@@ -27,13 +27,13 @@ body {
     padding:60px;
 }
 
-h2, p {
+h1, p {
     padding: 15px 10px;
     text-align: center;
     font-size: 15px;
 }
 
-h2 {
+h1 {
     color: hsl(218, 44%, 22%);
     font-weight: 700;
     font-size: 23px;
