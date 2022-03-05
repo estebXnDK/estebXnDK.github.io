@@ -3,28 +3,42 @@
     padding: 0;
     margin: 0;
 }
+
 body {
     background-color: $backgrond-body-color;
-    color: $primary;
+    color: $primary-color;
     font-family: $font-family;
     font-size: $font-size;
 }
+
+a {
+    color: $white-color;
+    text-decoration: none;
+    
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
 h2 {
-    color: $text-color;
     margin: 10px 0 0 0;
 }
+
 p {
     margin: 10px 0 10px 0;
 }
-strong {
-    color: $text-color;
-}
+
 hr {
     display: block;
     border: 0;
     border-top: 3px solid $separator-color;
     margin: 10px 0;
 }
-.resalt-color {
-    color: $secondary;
+
+.text-secondary {
+    color: $secondary-color;
+}
+
+.img-fluid {
+    width: 100%;
 }

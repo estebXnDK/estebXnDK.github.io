@@ -10,17 +10,20 @@ body {
   font-size: 18px;
 }
 
-h2 {
+a {
   color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: #00fff7;
+}
+
+h2 {
   margin: 10px 0 0 0;
 }
 
 p {
   margin: 10px 0 10px 0;
-}
-
-strong {
-  color: white;
 }
 
 hr {
@@ -30,8 +33,12 @@ hr {
   margin: 10px 0;
 }
 
-.resalt-color {
+.text-secondary {
   color: #00fff7;
+}
+
+.img-fluid {
+  width: 100%;
 }
 
 .card {
@@ -46,14 +53,32 @@ hr {
   width: 300px;
   border-radius: 15px;
 }
-.card > figure > img {
-  border-radius: calc($radius-corner / 2);
+.card .images {
+  position: relative;
+}
+.card .images #img {
+  border-radius: 15px;
+}
+.card .images #hover-img {
+  position: absolute;
+  padding: 42%;
+  visibility: visible;
+  opacity: 0;
+  top: 0rem;
+  left: 0rem;
+  border-radius: 15px;
+}
+.card .images #hover-img:hover {
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(0, 255, 247, 0.5);
+  cursor: pointer;
 }
 .card .credits {
   display: flex;
   align-items: center;
 }
-.card .credits > strong {
+.card .credits > a {
   margin-left: 5px;
 }
 .card .infoNft {
@@ -73,10 +98,6 @@ hr {
   border-radius: 100%;
   border: 2px solid white;
   margin-right: 10px;
-}
-
-.img-fluid {
-  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

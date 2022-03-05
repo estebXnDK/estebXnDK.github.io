@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
     <title>NFT Preview Card</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,25 +14,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="card">
-        <figure>
-            <img class="img-fluid" src="./img/image-equilibrium.jpg" alt="nftPreview">
-        </figure>
-        <h2>Equilibrium #3429</h2>
-        <p>Our Equilibrium collection promotes balance and calm.</p>
-        <div class="infoNft">
-            <div class="price resalt-color">
-                <img src="./img/icon-ethereum.svg" alt="iconEthereum">
-                 0.041ETH
+    <header></header>
+    <main>
+        <div class="card">
+            <div class="images">
+                <img id="img" class="img-fluid" src="./img/image-equilibrium.jpg" alt="nftPreview">
+                <img id="hover-img" src="img/icon-view.svg" alt="svg-eye">
             </div>
-            <div class="updated">
-                <img src="./img/icon-clock.svg" alt="iconClock"> 3 days left
+            <a class="text-hover-secondary" href="javascript:void(0)">
+                <h2>Equilibrium #3429</h2>
+            </a>
+            <p>Our Equilibrium collection promotes balance and calm.</p>
+            <div class="infoNft">
+                <div class="price text-secondary">
+                    <img src="./img/icon-ethereum.svg" alt="iconEthereum">
+                     0.041ETH
+                </div>
+                <div class="updated">
+                    <img src="./img/icon-clock.svg" alt="iconClock"> 3 days left
+                </div>
+            </div>
+            <hr>
+            <div class="credits">
+                <img class="avatar" src="./img/image-avatar.png" alt="avatar"> Creation of <a class="text-hover-secondary" href="javascript:void(0)"> Jules Wyvern</a>
             </div>
         </div>
-        <hr>
-        <div class="credits">
-            <img class="avatar" src="./img/image-avatar.png" alt="avatar"> Creation of <strong> Jules Wyvern</strong>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
