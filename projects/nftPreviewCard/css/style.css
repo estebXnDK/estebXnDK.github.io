@@ -18,8 +18,9 @@ a:hover {
   color: #00fff7;
 }
 
-h2 {
+h1 {
   margin: 10px 0 0 0;
+  font-size: 18px;
 }
 
 p {
@@ -99,5 +100,3 @@ hr {
   border: 2px solid white;
   margin-right: 10px;
 }
-
-/*# sourceMappingURL=style.css.map */
