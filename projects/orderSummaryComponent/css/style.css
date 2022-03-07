@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../img/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  background-size: cover;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+h1, h2 {
+  color: #1f2f56;
+}
+
+h1, p {
+  margin: 28px 47px;
+}
+
+p, button {
+  color: #7280a7;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #3829e0;
+  transition: 0.3s;
+}
+a:hover {
+  opacity: 0.4;
+}
+
+.btn {
+  border-radius: 8px;
+  border: none;
+  padding: 18px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn.btn-primary {
+  background-color: #3829e0;
+  color: white;
+  margin-bottom: 10px;
+  box-shadow: 0 25px 30px 1px rgba(31, 47, 86, 0.15);
+}
+.btn.btn-primary:hover {
+  opacity: 0.4;
+}
+.btn.btn-secondary {
+  background-color: rgba(0, 0, 0, 0);
+}
+.btn.btn-secondary:hover {
+  color: black;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 25px 30px 1px rgba(31, 47, 86, 0.15);
+}
+.card header img {
+  border-radius: 15px 15px 0 0px;
+  width: 100%;
+}
+.card .actions {
+  margin: 28px 47px;
+}
+.card div.promotion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px;
+  margin: 28px 47px;
+  border-radius: 15px;
+  background-color: #f5f7ff;
+}
+.card div.promotion * {
+  margin: 0;
+}
+.card div.promotion div {
+  flex: auto;
+  text-align: left;
+  margin: 0 20px;
+}
+.card .actions {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 526px) {
+  body {
+    background-image: url("../img/pattern-background-mobile.svg");
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h1, p {
+    margin: 28px 23px;
+  }
+
+  .card {
+    max-width: 320px;
+  }
+  .card .actions {
+    margin: 28px 23px;
+  }
+  .card div.promotion {
+    margin: 28px 23px;
+    padding: 12px;
+  }
+  .card div.promotion * {
+    margin: 0;
+  }
+  .card div.promotion div {
+    margin: 0 15px;
+  }
+}

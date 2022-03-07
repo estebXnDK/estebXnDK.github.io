@@ -1,0 +1,42 @@
+.card {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    background-color: white;
+    border-radius: $border-radius;
+    box-shadow: 0 25px 30px 1px rgba($color: $darkBlue, $alpha: 0.15);
+    header img {
+        border-radius: $border-radius $border-radius 0 0px;
+        width: 100%;
+    }
+    .actions {
+        margin: $general-margins-web;
+    }
+    
+    div.promotion {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 24px;
+        margin: $general-margins-web;
+        border-radius: $border-radius;
+
+        background-color: $secondary-color;
+        *{
+            margin: 0;
+        }
+        div {
+            flex: auto;
+            text-align: left;
+            margin: 0 20px;
+        }
+    }
+
+    .actions {
+        display: flex;
+        flex-direction: column;
+    }
+}

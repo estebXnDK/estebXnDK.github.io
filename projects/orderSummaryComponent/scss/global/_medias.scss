@@ -1,0 +1,29 @@
+@media only screen and (max-width: 526px) {
+    body {
+        background-image: url('../img/pattern-background-mobile.svg');
+        // background-color: red;
+    }
+    h1{
+        font-size: 22px;
+    }
+    h1, p {
+        margin: $general-margins-app;
+    }
+
+    .card{
+        max-width: 320px;
+        .actions {
+            margin: $general-margins-app;
+        }
+        div.promotion {
+            margin: $general-margins-app;
+            padding: 12px;
+            *{
+                margin: 0;
+            }
+            div {
+                margin: 0 15px;
+            }
+        }
+    }
+}
